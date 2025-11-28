@@ -1,2 +1,2 @@
-A simple website about the belarussian city of Mstislavl
-ffourtytwot.github.io
+A simple website about the belarussian city of Mstislavl/
+https://ffourtytwot.github.io
