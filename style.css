@@ -1,16 +1,12 @@
 /* Ідэалагічна правільны CSS */
 :root {
-    --primary-color: #8B4513;
-    --accent-color: #D2691E;
-    --text-color: #333;
-    --bg-color: #f9f9f9;
+    --primary-color: #7B3F00; /* Больш глыбокі карычневы */
+    --accent-color: #C04000;  /* Цагляна-чырвоны */
+    --text-color: #222;
+    --bg-color: #f4f4f4;
     --white: #ffffff;
     
-    /* 
-       System Font Stack:
-       Выкарыстоўваем тое, што ўжо ёсць у карыстальніка. 
-       Хутка, прыватна, без Google.
-    */
+    /* System Font Stack */
     --font-heading: 'Times New Roman', 'Liberation Serif', 'FreeSerif', serif;
     --font-body: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Liberation Sans', 'Arial', sans-serif;
 }
@@ -25,7 +21,7 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.7; /* Павялічыў інтэрвал для зручнага чытання */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,14 +30,14 @@ body {
 /* Навігацыя */
 .navbar {
     background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px; /* Зрабіў крыху вузейшым для лепшага чытання тэксту */
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -56,12 +52,12 @@ body {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -77,41 +73,30 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
-/* Checkbox Hack - хаваем элемент кіравання */
-.menu-checkbox {
-    display: none;
-}
-
-/* Бургер меню */
-.burger {
-    display: none;
-    cursor: pointer;
-    padding: 5px;
-}
-
+/* Checkbox Hack */
+.menu-checkbox { display: none; }
+.burger { display: none; cursor: pointer; padding: 5px; }
 .burger .line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
-    margin: 5px 0;
+    display: block; width: 25px; height: 3px;
+    background-color: var(--text-color); margin: 5px 0;
     transition: all 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
-    height: 80vh;
-    /* УВАГА: Замяніў на лакальную карцінку для бяспекі */
+    height: 85vh;
     background-image: url('images/hero.jpg');
-    background-color: #333; /* Рэзервовы колер, калі няма карцінкі */
+    background-color: #333;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -122,87 +107,94 @@ body {
     color: var(--white);
 }
 
-.hero-overlay, .overlay {
+.hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.btn-container {
-    margin-top: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .btn {
-    padding: 12px 30px;
-    background-color: var(--primary-color);
+    padding: 15px 40px;
+    background-color: var(--accent-color);
     color: var(--white);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 600;
-    transition: background 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s;
     display: inline-block;
 }
 
 .btn:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 /* Галоўны кантэнт */
 .main-content {
     flex: 1;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
 .intro {
     text-align: center;
-    margin-bottom: 60px;
-    max-width: 800px;
+    margin-bottom: 80px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .intro h2 {
     font-family: var(--font-heading);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #444;
 }
 
 /* Галерэя */
 .gallery-preview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 40px;
 }
 
 .card {
     background: var(--white);
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 }
 
 .card img {
@@ -210,18 +202,20 @@ body {
     height: 250px;
     object-fit: cover;
     display: block;
-    background-color: #ddd; /* Рэзерв, пакуль карцінка не загрузіцца */
+    background-color: #eee;
 }
 
 .card h3 {
-    padding: 20px;
+    padding: 25px;
     font-family: var(--font-heading);
     text-align: center;
+    font-size: 1.3rem;
+    color: var(--primary-color);
 }
 
-/* Старонка гісторыі */
+/* Старонкі (Гісторыя і Славутасці) */
 .page-header {
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -233,48 +227,61 @@ body {
     background-color: var(--primary-color);
 }
 
+.page-header .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
 .page-header h1 {
     position: relative;
     z-index: 1;
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .content-page .article-block {
     background: var(--white);
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 40px;
+    margin-bottom: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border-left: 4px solid var(--accent-color);
 }
 
 .content-page h2 {
     font-family: var(--font-heading);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: var(--primary-color);
+    font-size: 1.8rem;
 }
 
-/* Сетка славутасцяў */
+.content-page p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Славутасці */
 .section-title {
     text-align: center;
     font-family: var(--font-heading);
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     color: var(--primary-color);
     font-size: 2.5rem;
 }
 
 .sights-grid {
     display: grid;
-    gap: 40px;
+    gap: 60px;
 }
 
 .sight-item {
     display: flex;
     background: var(--white);
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
 }
 
 .sight-item:nth-child(even) {
@@ -284,13 +291,13 @@ body {
 .sight-item img {
     width: 50%;
     object-fit: cover;
-    min-height: 300px;
+    min-height: 400px;
     display: block;
-    background-color: #ccc;
+    background-color: #ddd;
 }
 
 .sight-info {
-    padding: 40px;
+    padding: 50px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -300,64 +307,45 @@ body {
 .sight-info h2 {
     font-family: var(--font-heading);
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.sight-info p {
+    color: #555;
+    line-height: 1.8;
 }
 
 /* Footer */
 .footer {
-    background: #333;
-    color: #ccc;
+    background: #222;
+    color: #aaa;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-top: auto;
+    font-size: 0.9rem;
 }
 
-/* Адаптыўнасць (Mobile) */
+/* Mobile */
 @media screen and (max-width: 768px) {
     .nav-links {
-        position: absolute;
-        right: 0;
-        top: 70px;
+        position: absolute; right: 0; top: 70px;
         background-color: var(--white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-        height: 100vh;
-        transform: translateX(100%);
-        transition: transform 0.4s ease-in-out;
-        box-shadow: -2px 5px 5px rgba(0,0,0,0.1);
-        z-index: 999;
+        display: flex; flex-direction: column; align-items: center;
+        width: 80%; height: 100vh;
+        transform: translateX(100%); transition: transform 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1); z-index: 999;
     }
-
-    .nav-links li {
-        margin: 30px 0;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .menu-checkbox:checked ~ .nav-links {
-        transform: translateX(0%);
-    }
-
-    .menu-checkbox:checked ~ .burger .line:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
+    .nav-links li { margin: 25px 0; }
+    .burger { display: block; }
+    .menu-checkbox:checked ~ .nav-links { transform: translateX(0%); }
+    .menu-checkbox:checked ~ .burger .line:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+    .menu-checkbox:checked ~ .burger .line:nth-child(2) { opacity: 0; }
+    .menu-checkbox:checked ~ .burger .line:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
     
-    .menu-checkbox:checked ~ .burger .line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-checkbox:checked ~ .burger .line:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1rem; }
-    
+    .hero h1 { font-size: 2.8rem; }
     .sight-item { flex-direction: column; }
     .sight-item:nth-child(even) { flex-direction: column; }
     .sight-item img, .sight-info { width: 100%; }
+    .sight-info { padding: 30px; }
 }
