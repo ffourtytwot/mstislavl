@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="be">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mstislavl - An Ancient City of Belarus</title>
+    <title>Мсціслаў: Сэрца гісторыі</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Падключаем шрыфты Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Coat_of_Arms_of_Mscis%C5%82a%C5%AD%2C_Belarus.png" alt="Mstislavl Coat of Arms">
-            <h1>Mstislavl</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="tourism.html">Tourism</a></li>
-                <li><a href="culture.html">Culture</a></li>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Мсціслаў</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Галоўная</a></li>
+                <li><a href="history.html">Гісторыя</a></li>
+                <li><a href="sights.html">Славутасці</a></li>
             </ul>
-        </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Мсціслаў</h1>
+            <p>Старажытны горад, дзе ажываюць легенды</p>
+            <a href="sights.html" class="btn">Даследаваць</a>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&f=1&nofb=1&ipt=8b717e394d52f939903405f15b6a62a82d17a1422ee75257551a4a37db430c7d&ipo=images" alt="Panorama of Mstislavl">
-            <div class="hero-text">
-                <h2>Welcome to Mstislavl!</h2>
-                <p>Mstislavl, a town with a captivating past nestled in the Mogilev region of Belarus, invites you to discover its rich heritage. Founded in the 12th century, it has been a strategic crossroads, bearing witness to countless events that have shaped the region. Explore the remnants of the ancient fortress on the Castle Hill, wander through the peaceful streets, and experience the unique blend of history, culture, and natural beauty that defines Mstislavl.</p>
-                <a href="tourism.html" class="button">Discover Mstislavl's Tourism</a>
-            </div>
+    <main class="container">
+        <section class="intro">
+            <h2>Сардэчна запрашаем у Маленькі Вільнюс</h2>
+            <p>Мсціслаў — гэта жамчужына Магілёўшчыны, заснаваная ў 1135 годзе. Гэта горад замкаў, храмаў і рыцарскіх турніраў. Прагуляйцеся па Замкавай гары, адчуйце подых стагоддзяў і атрымлівайце асалоду ад цішыні правінцыйнай даўніны.</p>
         </section>
 
-        <section class="highlights">
-            <h3>Key Highlights</h3>
-            <div class="highlight-grid">
-                <div class="highlight-item">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&f=1&nofb=1&ipt=8b717e394d52f939903405f15b6a62a82d17a1422ee75257551a4a37db430c7d&ipo=images" alt="Mstislavl Castle Hill">
-                    <h4>Mstislavl Castle Hill</h4>
-                    <p>The Castle Hill is the undisputed historical heart of Mstislavl.  Climb to its summit and take in the breathtaking panoramic views of the surrounding countryside. Explore the archaeological remnants of the ancient Mstislavl fortress, a silent testament to the town's strategic importance throughout history. Imagine the battles fought and the lives lived within its walls, as you connect with Mstislavl's rich past.</p>
-                </div>
-                <div class="highlight-item">
-                    <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Alexander Nevsky Church">
-                    <h4>Alexander Nevsky Church</h4>
-                    <p>A stunning example of 19th-century Orthodox architecture, the Alexander Nevsky Church exudes an aura of peace and tranquility. Admire its elegant design, intricate details, and soaring bell tower. Step inside to experience the church's serene atmosphere and appreciate the artistry of its icons and frescoes.  A visit to the Alexander Nevsky Church offers a moment of quiet reflection and an appreciation for Mstislavl's spiritual heritage.</p>
-                </div>
-                <div class="highlight-item">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&f=1&nofb=1&ipt=625ec1f4311a77aec25af47efbadefbc1058c18cea09bea837089dc250c17af5&ipo=images" alt="Knights' Festival">
-                    <h4>Knights' Festival</h4>
-                    <p>Immerse yourself in the sights and sounds of medieval Mstislavl at the annual Knights' Festival. This vibrant event brings history to life with thrilling reenactments of battles, demonstrations of medieval crafts, and captivating musical performances. Witness knights in shining armor clash in combat, explore authentic artisan stalls, and experience the excitement of a bygone era.  The Knights' Festival is a must-see for anyone interested in history and culture.</p>
-                </div>
+        <section class="gallery-preview">
+            <div class="card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&f=1&nofb=1&ipo=images" alt="Замкавая гара">
+                <h3>Замкавая гара</h3>
+            </div>
+            <div class="card">
+                <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Царква">
+                <h3>Духоўная спадчына</h3>
+            </div>
+            <div class="card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&f=1&nofb=1&ipo=images" alt="Рыцарскі фэст">
+                <h3>Рыцарскі фэст</h3>
             </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>&copy; 2023 Мсціслаў. Гістарычны гід.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
