@@ -1,66 +1,71 @@
-<!DOCTYPE html>
-<html lang="be">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="be" lang="be">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мсціслаў: Сэрца гісторыі</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Падключаем шрыфты Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-    <nav class="navbar">
+    <div class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Мсціслаў</a>
+            
+            <!-- Механізм мабільнага меню без JS -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+            <label for="menu-toggle" class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Галоўная</a></li>
                 <li><a href="history.html">Гісторыя</a></li>
                 <li><a href="sights.html">Славутасці</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </div>
-    </nav>
+    </div>
 
-    <header class="hero">
+    <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Мсціслаў</h1>
             <p>Старажытны горад, дзе ажываюць легенды</p>
-            <a href="sights.html" class="btn">Даследаваць</a>
+            <div class="btn-container">
+                <a href="sights.html" class="btn">Даследаваць</a>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container">
-        <section class="intro">
+    <div class="container main-content">
+        <div class="intro">
             <h2>Сардэчна запрашаем у Маленькі Вільнюс</h2>
             <p>Мсціслаў — гэта жамчужына Магілёўшчыны, заснаваная ў 1135 годзе. Гэта горад замкаў, храмаў і рыцарскіх турніраў. Прагуляйцеся па Замкавай гары, адчуйце подых стагоддзяў і атрымлівайце асалоду ад цішыні правінцыйнай даўніны.</p>
-        </section>
+        </div>
 
-        <section class="gallery-preview">
+        <div class="gallery-preview">
             <div class="card">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&f=1&nofb=1&ipo=images" alt="Замкавая гара">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&amp;f=1&amp;nofb=1&amp;ipo=images" alt="Замкавая гара" />
                 <h3>Замкавая гара</h3>
             </div>
             <div class="card">
-                <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Царква">
+                <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Царква" />
                 <h3>Духоўная спадчына</h3>
             </div>
             <div class="card">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&f=1&nofb=1&ipo=images" alt="Рыцарскі фэст">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&amp;f=1&amp;nofb=1&amp;ipo=images" alt="Рыцарскі фэст" />
                 <h3>Рыцарскі фэст</h3>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2023 Мсціслаў. Гістарычны гід.</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>

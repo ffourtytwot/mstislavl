@@ -1,36 +1,40 @@
-<!DOCTYPE html>
-<html lang="be">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="be" lang="be">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Што паглядзець у Мсціславе</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-    <nav class="navbar">
+    <div class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Мсціслаў</a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+            <label for="menu-toggle" class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+
             <ul class="nav-links">
                 <li><a href="index.html">Галоўная</a></li>
                 <li><a href="history.html">Гісторыя</a></li>
                 <li><a href="sights.html" class="active">Славутасці</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </div>
-    </nav>
+    </div>
 
-    <main class="container">
+    <div class="container main-content">
         <h1 class="section-title">Турыстычныя жамчужыны</h1>
         
         <div class="sights-grid">
             <div class="sight-item">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&f=1&nofb=1&ipo=images" alt="Замкавая гара">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplanetabelarus.by%2Fupload%2Fresize_cache%2Fiblock%2F9ea%2F1330_747_18e21fe612b4afb807a26ecc22279a1d9%2F9ea4276fffe9f620de6eedd5893fc462.jpg&amp;f=1&amp;nofb=1&amp;ipo=images" alt="Замкавая гара" />
                 <div class="sight-info">
                     <h2>Замкавая гара</h2>
                     <p>Гістарычнае сэрца горада. Менавіта тут пачынаўся Мсціслаў. З гары адкрываецца цудоўны від, а археалагічныя раскопкі дазваляюць зазірнуць у сіівую даўніну.</p>
@@ -38,7 +42,7 @@
             </div>
 
             <div class="sight-item">
-                <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Царква Аляксандра Неўскага">
+                <img src="https://poshyk.info/wp-content/uploads/2021/05/cerkov-aleksandra-nevskogo-mstislavl.jpg" alt="Царква Аляксандра Неўскага" />
                 <div class="sight-info">
                     <h2>Царква Аляксандра Неўскага</h2>
                     <p>Помнік архітэктуры XIX стагоддзя. Храм уражвае сваёй стрыманасцю і духоўнай веліччу. Унутры захоўваюцца старадаўнія іконы.</p>
@@ -46,7 +50,7 @@
             </div>
 
             <div class="sight-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mstsislau_Jesuit_Collegium_Church.JPG/1200px-Mstsislau_Jesuit_Collegium_Church.JPG" alt="Езуіцкі касцёл">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mstsislau_Jesuit_Collegium_Church.JPG/1200px-Mstsislau_Jesuit_Collegium_Church.JPG" alt="Езуіцкі касцёл" />
                 <div class="sight-info">
                     <h2>Касцёл Унебаўзяцця НПМ</h2>
                     <p>Былы езуіцкі касцёл — шэдэўр барока. Нягледзячы на складаны лёс, ён застаецца дамінантай горада і сведкам эпохі Рэчы Паспалітай.</p>
@@ -54,19 +58,18 @@
             </div>
 
             <div class="sight-item">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&f=1&nofb=1&ipo=images" alt="Рыцарскі фэст">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kirovsk.by%2Fwp-content%2Fuploads%2F2021%2F07%2F%25D0%25A4%25D1%258D%25D1%2581%25D1%2582-1.jpg&amp;f=1&amp;nofb=1&amp;ipo=images" alt="Рыцарскі фэст" />
                 <div class="sight-info">
                     <h2>Рыцарскі фэст</h2>
                     <p>Штогадовы фестываль сярэднявечнай культуры, які праходзіць у ліпені. Турніры, музыка, танцы і атмасфера сапраўднага сярэднявечча.</p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2023 Мсціслаў. Гістарычны гід.</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
