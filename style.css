@@ -332,4 +332,24 @@ body {
     }
 
     /* Анімацыя крыжыка */
-    .menu-checkbox:checked ~ .burger .li
+    .menu-checkbox:checked ~ .burger .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-checkbox:checked ~ .burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-checkbox:checked ~ .burger .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Адаптыўнасць Hero */
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; }
+    
+    /* Адаптыўнасць славутасцяў */
+    .sight-item { flex-direction: column; }
+    .sight-item:nth-child(even) { flex-direction: column; }
+    .sight-item img, .sight-info { width: 100%; }
+}
